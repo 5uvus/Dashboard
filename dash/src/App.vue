@@ -35,7 +35,7 @@
        <p>Height by age of <b>{{sel_reg}}</b></p>
        <VuePlotly :data="p4" :layout="{barmode: 'group'}"></VuePlotly><br>
        <p>Counting medals of <b>{{sel_reg}}</b> through history </p>
-      <HelloWorld :data="p5" />
+      <PlotComp :data="p5" />
      
      
      </div>
@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import PlotComp from './components/PlotComp.vue';
 
 import DataTable from 'datatables.net-vue3'
 import DataTablesLib from 'datatables.net-bs5'
@@ -58,7 +58,7 @@ export default {
   components: {
     DataTable,
     VuePlotly,
-    HelloWorld
+    PlotComp
     
   },
   data(){
